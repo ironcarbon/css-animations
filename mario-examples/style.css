@@ -46,17 +46,25 @@ html, body{
   top: -40px;
   left: 0px;
   animation-name: drive;
-  animation-duration: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  /* none is default, backwards, forwards, both */
+  animation-delay: 2s;
 }
 
 /*// KEYFRAMES //*/
 
 @keyframes drive{
-  from{ transform: translateX(0)}
+  from{ transform: translateX(200px)}
   to{ transform: translateX(700px)}
 }
 
+/* 
 
+animation-fill-mode property specifies a style for the element when the animation is not playing (before it starts, after it ends, or both). 
+
+CSS animations do not affect the element before the first keyframe is played or after the last keyframe is played. The animation-fill-mode property can override this behavior.
+*/
 
 
 
