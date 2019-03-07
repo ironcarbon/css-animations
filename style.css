@@ -50,7 +50,7 @@ firts transition time, second delay time, how
   cursor: pointer;
   transition: background 1s, transform 0.3s;
   /* transition: 1s; */
-  transition: background 1s, transform 0.3s 1s;
+  transition: background 1s, transform 0.3s 0.3s;
   /* transition: background 1s, transform 1s 1s linear;
   ease-in ease-out ease */
 
