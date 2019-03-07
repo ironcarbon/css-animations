@@ -8,6 +8,9 @@ body{
   box-sizing: border-box;
 }
 
+
+/* TRANSFORM */
+
 /* img{
   transform: translate(-200px, 200px);
   transform: translateX(100);
@@ -24,6 +27,36 @@ body{
   transform: rotateZ(-45deg);
 } */
 
-img{
+/* img{
   transform: rotateZ(-90deg) translateY(200px) scale(2);
+} */
+
+
+
+/* TRANSITION
+Transition an element from one state to another and how the element transition between two.
+
+firts transition time, second delay time, how
+*/
+
+.circle{
+  width: 100px;
+  padding: 50px 0;
+  line-height: 0;
+  margin: 60px auto;
+  background: pink;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 1s, transform 0.3s;
+  /* transition: 1s; */
+  transition: background 1s, transform 0.3s 1s;
+  /* transition: background 1s, transform 1s 1s linear;
+  ease-in ease-out ease */
+
+}
+
+.circle:hover{
+  background: salmon;
+  transform: rotate(360deg);
 }
