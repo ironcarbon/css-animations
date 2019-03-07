@@ -51,7 +51,7 @@ html, body{
   /* none is default, backwards, forwards, both */
   animation-delay: 2s;
   animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(.69,1.22,.8,-1.17);
+  animation-timing-function: linear;
   /* animation-timing-function: ease / linear / ease-in /ease-out /ease-in-out /cubic-bezier(.02,.97,.01,.98)*/
 }
 
@@ -61,11 +61,29 @@ html, body{
   top: 100px;
   left: 0;
   animation-name: drive;
-  animation-duration: 7s;
+  animation-duration: 4s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   /* alternate, alternate-reverse, normal, reverse */
+}
+
+.cloud{
+  position: absolute;
+}
+
+.cloud:nth-child(1){
+  width: 200px;
+  top: 120px;
+  opacity: 0.5;
+  animation: wind 80s linear infinite reverse;
+}
+/* animation shorthand: name / duration / timing-function / iteration count /direction*/
+
+.cloud:nth-child(2){
+  width: 300px;
+  top: 0;
+  animation: wind 50s linear infinite reverse;
 }
 
 /*// KEYFRAMES //*/
@@ -74,6 +92,14 @@ html, body{
   from{ transform: translateX(-200px)}
   to{ transform: translateX(2000px)}
 }
+
+@keyframes wind{
+  from{left: -300px}
+  to{left: 100%}
+}
+
+
+
 
 /* 
 
