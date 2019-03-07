@@ -46,17 +46,18 @@ html, body{
   top: -40px;
   left: 0px;
   animation-name: drive;
-  animation-duration: 1s;
+  animation-duration: 3s;
   animation-fill-mode: both;
   /* none is default, backwards, forwards, both */
   animation-delay: 2s;
+  animation-iteration-count: 3;
 }
 
 /*// KEYFRAMES //*/
 
 @keyframes drive{
-  from{ transform: translateX(200px)}
-  to{ transform: translateX(700px)}
+  from{ transform: translateX(-200px)}
+  to{ transform: translateX(1000px)}
 }
 
 /* 
