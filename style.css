@@ -1,5 +1,29 @@
+body{
+  background: lightblue;
+  text-align: center;
+}
 .wrapper{
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
+}
+
+/* img{
+  transform: translate(-200px, 200px);
+  transform: translateX(100);
+  transform: translate(-300);
+} */
+
+/* img{
+  transform: scaleX(0.2);
+  transform: scaleY(3);
+  transform: scale(3, 02);
+} */
+
+/* img{
+  transform: rotateZ(-45deg);
+} */
+
+img{
+  transform: rotateZ(-90deg) translateY(200px) scale(2);
 }
