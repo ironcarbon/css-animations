@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keyframes</title>
+    <style>
+        body {
+            background: rgb(119, 203, 206);
+        }
+
+        .box {
+            background: pink;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            /* animation-name: animate-1;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: backwards;
+            animation-delay: 2s;
+            animation-direction: alternate;
+            animation-timing-function: ease; */
+            animation: animate-1 3s ease 2s backwards;
+        }
+
+        @keyframes animate-1 {
+            from {
+                width: 100px;
+                top: 0;
+            }
+
+            to {
+                width: 600px;
+                background-color: rgb(158, 67, 82);
+                top: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>
